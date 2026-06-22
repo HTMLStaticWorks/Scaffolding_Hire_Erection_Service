@@ -625,6 +625,17 @@ section {
 @media (max-width: 768px) {
   .footer-grid { grid-template-columns: 1fr; text-align: center; }
   .footer-col h4 { margin-bottom: var(--space-2); }
+  .footer-col:first-child {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .footer-col:first-child p {
+    margin-inline: auto;
+  }
+  .footer-col .footer-links div[style*="display: flex"] {
+    justify-content: center;
+  }
 }
 
 /* =========================================
@@ -657,6 +668,30 @@ section {
 }
 .pricing-table tr:last-child td {
   border-bottom: none;
+}
+
+/* Force and style horizontal scrollbar visibility on screens below 768px */
+@media (max-width: 768px) {
+  .table-responsive {
+    overflow-x: scroll !important;
+    scrollbar-width: thin;
+    scrollbar-color: var(--color-primary) var(--color-card-bg);
+  }
+  .table-responsive::-webkit-scrollbar {
+    height: 8px;
+    display: block;
+  }
+  .table-responsive::-webkit-scrollbar-track {
+    background: var(--color-card-bg);
+    border-radius: 4px;
+  }
+  .table-responsive::-webkit-scrollbar-thumb {
+    background: var(--color-primary);
+    border-radius: 4px;
+  }
+  .table-responsive::-webkit-scrollbar-thumb:hover {
+    background: var(--color-accent);
+  }
 }
 .pricing-table tr:hover td {
   background: rgba(0,0,0,0.02);
@@ -756,6 +791,8 @@ section {
   background: var(--color-card-bg);
   border: 1px solid var(--color-border);
   border-radius: var(--radius);
+  min-height: 80px;
+  height: 100%;
 }
 .doc-info {
   display: flex;
@@ -765,4 +802,433 @@ section {
 .doc-info i {
   font-size: 24px;
   color: var(--color-primary);
+}
+
+/* =========================================
+   RESPONSIVE OVERRIDES FOR HERO & BUTTONS
+   ========================================= */
+@media (max-width: 576px) {
+  :root {
+    --size-h1: clamp(2rem, 8vw, 3rem);
+  }
+  .hero h1 {
+    font-size: clamp(2rem, 8vw, 3rem) !important;
+  }
+  .hero-actions {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+  .hero-actions .btn {
+    width: 100%;
+    max-width: 320px;
+    box-sizing: border-box;
+  }
+}
+
+@media (max-width: 380px) {
+  :root {
+    --size-h1: 1.85rem;
+  }
+  .hero h1 {
+    font-size: 1.85rem !important;
+  }
+}
+
+/* ==========================================================
+   SCAFFOLD TYPES TEASER, WHY SCAFFIX & HOW WE WORK RESPONSIVE LAYOUTS
+   ========================================================== */
+/* Desktop / 1024 view: force 3x1 columns */
+#types .grid,
+#why-scaffix .grid,
+#how-we-work .grid {
+  grid-template-columns: repeat(3, 1fr) !important;
+}
+
+/* 768 view: 2 columns, 3rd card centered */
+@media (max-width: 800px) {
+  #why-scaffix .grid,
+  #how-we-work .grid {
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
+  #why-scaffix .grid > *:last-child,
+  #how-we-work .grid > *:last-child {
+    grid-column: 1 / span 2;
+    justify-self: center;
+    width: calc((100% - var(--space-6)) / 2);
+  }
+}
+
+/* Mobile view: 1 column (one by one) */
+@media (max-width: 576px) {
+  #why-scaffix .grid,
+  #how-we-work .grid {
+    grid-template-columns: 1fr !important;
+  }
+  #why-scaffix .grid > *:last-child,
+  #how-we-work .grid > *:last-child {
+    grid-column: auto;
+    width: 100%;
+  }
+}
+
+/* Tablet view styling for WHO WE SERVE split card images to balance aspect ratio */
+@media (min-width: 577px) and (max-width: 1024px) {
+  #who-we-serve .card img {
+    height: 380px !important;
+  }
+}
+
+/* Reduce hero top/bottom gap on tablet and mobile viewports (1024px and down) */
+@media (max-width: 1024px) {
+  .hero {
+    padding-top: calc(80px + var(--space-5)) !important; /* navbar height + 32px padding */
+    padding-bottom: var(--space-5) !important;
+    min-height: auto !important;
+  }
+  .home2-hero-grid {
+    grid-template-columns: repeat(2, 1fr) !important; /* Force 2-columns layout side-by-side down to 577px */
+  }
+}
+
+/* Desktop 1440px view */
+@media (min-width: 1025px) {
+  .home2-hero-grid > div:last-child {
+    height: 600px !important;
+  }
+}
+
+/* Tablet Landscape / Desktop 1024px view */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .home2-hero-grid > div:last-child {
+    height: 500px !important;
+  }
+}
+
+/* Tablet Portrait 768px view */
+@media (min-width: 577px) and (max-width: 768px) {
+  .home2-hero-grid > div:last-child {
+    height: 380px !important;
+  }
+}
+
+/* Home 2 Hero layout reordering for mobile view <= 576px (Image first, Text below) */
+@media (max-width: 576px) {
+  .home2-hero-grid {
+    display: flex !important;
+    flex-direction: column-reverse !important;
+    gap: var(--space-5) !important;
+  }
+  .home2-hero-grid > div:last-child {
+    height: 300px !important; /* Cap vertical image scale on mobile stacked layouts */
+    width: 100% !important;
+  }
+}
+
+/* Home 2 Alternative Info Blocks layout reordering & spacing for <= 768px view */
+@media (max-width: 768px) {
+  .residential-info-grid {
+    display: flex !important;
+    flex-direction: column-reverse !important;
+    gap: var(--space-5) !important;
+  }
+  
+  /* Remove asymmetric left/right desktop paddings when stacked */
+  .residential-info-grid > div,
+  .home2-hero-grid + section + section .grid-2 > div {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+}
+
+/* =========================================
+   ACCREDITATIONS HOVER EFFECTS
+   ========================================= */
+.accreditations-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 64px;
+  align-items: center;
+}
+
+.accreditation-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-weight: 700;
+  font-size: 1.4rem;
+  opacity: 0.75;
+  transition: all var(--transition);
+  cursor: default;
+}
+
+.accreditation-item i {
+  font-size: 2.5rem;
+  color: var(--color-primary);
+  transition: color var(--transition), transform var(--transition);
+}
+
+.accreditation-item:hover {
+  opacity: 1;
+  transform: translateY(-4px);
+}
+
+.accreditation-item:hover i {
+  color: var(--color-accent);
+  transform: scale(1.1);
+}
+
+/* =========================================
+   ABOUT TEAM SECTION GRID STYLING
+   ========================================= */
+/* Desktop 1024px view: Force 3x1 layout */
+@media (min-width: 769px) and (max-width: 1024px) {
+  #about-team .grid {
+    grid-template-columns: repeat(3, 1fr) !important;
+  }
+}
+
+/* Tablet Portrait 768px view: 2x1 layout with 3rd card centered */
+@media (min-width: 577px) and (max-width: 768px) {
+  #about-team .grid {
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
+  #about-team .grid > *:last-child {
+    grid-column: 1 / span 2;
+    justify-self: center;
+    width: calc((100% - var(--space-6)) / 2);
+  }
+}
+
+/* Mobile view: Stacked one by one */
+@media (max-width: 576px) {
+  #about-team .grid {
+    grid-template-columns: 1fr !important;
+  }
+  #about-team .grid > *:last-child {
+    grid-column: auto;
+    width: 100%;
+  }
+}
+
+/* =========================================
+   SERVICES SCAFFOLD TYPES GRID STYLING
+   ========================================= */
+/* Desktop 1440px & 1024px views: Force 3x2 layout */
+@media (min-width: 769px) {
+  #types .grid {
+    grid-template-columns: repeat(3, 1fr) !important;
+  }
+}
+
+/* Tablet Portrait 768px view: Force 2x3 layout */
+@media (min-width: 577px) and (max-width: 768px) {
+  #types .grid {
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
+}
+
+/* Mobile view: Stacked one by one */
+@media (max-width: 576px) {
+  #types .grid {
+    grid-template-columns: 1fr !important;
+  }
+}
+
+/* =========================================
+   SERVICES ADD-ON SERVICES GRID STYLING
+   ========================================= */
+/* Desktop 1440px & 1024px views: Force 4x1 layout */
+@media (min-width: 769px) {
+  #addon-services .grid {
+    grid-template-columns: repeat(4, 1fr) !important;
+  }
+}
+
+/* Tablet Portrait 768px view: Force 2x2 layout */
+@media (min-width: 577px) and (max-width: 768px) {
+  #addon-services .grid {
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
+}
+
+/* Mobile view: Stacked one by one */
+@media (max-width: 576px) {
+  #addon-services .grid {
+    grid-template-columns: 1fr !important;
+  }
+}
+
+/* =========================================
+   HIRE RATES CARDS GRID STYLING
+   ========================================= */
+/* Desktop 1024px view: Force 3x1 layout */
+@media (min-width: 769px) and (max-width: 1024px) {
+  #hire-rates-grid {
+    grid-template-columns: repeat(3, 1fr) !important;
+  }
+}
+
+/* Tablet Portrait 768px view: 2x1 layout with 3rd card centered */
+@media (min-width: 577px) and (max-width: 768px) {
+  #hire-rates-grid {
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
+  #hire-rates-grid > *:last-child {
+    grid-column: 1 / span 2;
+    justify-self: center;
+    width: calc((100% - var(--space-6)) / 2);
+  }
+}
+
+/* Mobile view: Stacked one by one */
+@media (max-width: 576px) {
+  #hire-rates-grid {
+    grid-template-columns: 1fr !important;
+  }
+  #hire-rates-grid > *:last-child {
+    grid-column: auto;
+    width: 100%;
+  }
+}
+
+/* =========================================
+   CERTIFICATIONS GRID STYLING
+   ========================================= */
+/* Desktop 1440px & 1024px views: Force 4x1 layout */
+@media (min-width: 769px) {
+  #certifications-grid {
+    grid-template-columns: repeat(4, 1fr) !important;
+  }
+}
+
+/* Tablet Portrait 768px view: Force 2x2 layout */
+@media (min-width: 577px) and (max-width: 768px) {
+  #certifications-grid {
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
+}
+
+/* Mobile view: Stacked one by one */
+@media (max-width: 576px) {
+  #certifications-grid {
+    grid-template-columns: 1fr !important;
+  }
+}
+
+/* Accreditations Cards Hover Effect */
+#certifications-grid > div {
+  transition: transform var(--transition), border-color var(--transition), box-shadow var(--transition);
+  cursor: default;
+}
+#certifications-grid > div:hover {
+  transform: translateY(-8px);
+  border-color: var(--color-primary) !important;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+}
+#certifications-grid > div i {
+  transition: color var(--transition), transform var(--transition);
+}
+#certifications-grid > div:hover i {
+  color: var(--color-accent) !important;
+  transform: scale(1.1);
+}
+
+/* =========================================
+   COMPLIANCE DOWNLOADS GRID STYLING
+   ========================================= */
+/* Desktop & Tablet (768px, 1024px & 1440px views): Force 2x2 layout */
+@media (min-width: 577px) {
+  #downloads-grid {
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
+}
+
+/* Mobile view: Stacked one by one */
+@media (max-width: 576px) {
+  #downloads-grid {
+    grid-template-columns: 1fr !important;
+  }
+}
+
+/* =========================================
+   BLOG PAGE ARTICLES CENTER ALIGNMENT
+   ========================================= */
+#blog-grid article.card {
+  align-items: center !important;
+  text-align: center !important;
+}
+
+#blog-grid article.card .card-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+}
+
+#blog-grid article.card .card-content > div {
+  justify-content: center !important;
+}
+
+#blog-grid article.card .read-more-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* =========================================
+   BACK TO TOP BUTTON
+   ========================================= */
+#back-to-top {
+  position: fixed;
+  bottom: 32px;
+  right: 32px;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background-color: var(--color-primary);
+  color: #fff;
+  border: 2px solid transparent;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  z-index: 1000;
+  opacity: 0;
+  visibility: hidden;
+  transition: all var(--transition);
+  transform: translateY(10px);
+}
+
+#back-to-top.visible {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+#back-to-top:hover {
+  background-color: var(--color-accent);
+  transform: translateY(-4px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* =========================================
+   TESTIMONIALS GRID STYLING
+   ========================================= */
+/* Desktop & Tablet (768px, 1024px & 1440px views): Force 2x1 layout */
+@media (min-width: 577px) {
+  #testimonials-grid {
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
+}
+
+/* Mobile view: Stacked one by one */
+@media (max-width: 576px) {
+  #testimonials-grid {
+    grid-template-columns: 1fr !important;
+  }
 }

@@ -178,4 +178,27 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     });
   }
+  /* ==========================================
+     BACK TO TOP BUTTON
+  ========================================== */
+  const backToTop = document.createElement('button');
+  backToTop.id = 'back-to-top';
+  backToTop.setAttribute('aria-label', 'Back to top');
+  backToTop.innerHTML = '<i class="ph ph-arrow-up"></i>';
+  document.body.appendChild(backToTop);
+
+  window.addEventListener('scroll', () => {
+    if (window.scrollY > 300) {
+      backToTop.classList.add('visible');
+    } else {
+      backToTop.classList.remove('visible');
+    }
+  });
+
+  backToTop.addEventListener('click', () => {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    });
+  });
 });

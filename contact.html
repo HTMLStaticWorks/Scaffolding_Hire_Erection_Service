@@ -1,14 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Us | Scaffix</title>
-    
+
     <script src="https://unpkg.com/@phosphor-icons/web"></script>
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/rtl.css">
 </head>
+
 <body>
 
     <div class="drawer-overlay"></div>
@@ -38,15 +40,16 @@
             <nav class="nav-menu">
                 <a href="index.html" class="nav-link">Home</a>
                 <a href="home2.html" class="nav-link">Home 2</a>
-            <a href="about.html" class="nav-link">About Us</a>
+                <a href="about.html" class="nav-link">About Us</a>
                 <a href="services.html" class="nav-link">Services</a>
-            <a href="hire-rates.html" class="nav-link">Hire Rates</a>
+                <a href="hire-rates.html" class="nav-link">Hire Rates</a>
                 <a href="safety-compliance.html" class="nav-link">Safety Compliance</a>
                 <a href="blog.html" class="nav-link">Blog</a>
                 <a href="contact.html" class="nav-link active">Contact</a>
             </nav>
             <div class="nav-actions">
-                <button class="icon-btn rtl-toggle" aria-label="Toggle RTL"><i class="ph ph-arrows-left-right"></i></button>
+                <button class="icon-btn rtl-toggle" aria-label="Toggle RTL"><i
+                        class="ph ph-arrows-left-right"></i></button>
                 <button class="icon-btn theme-toggle" aria-label="Toggle dark mode"><i class="ph ph-moon"></i></button>
                 <a href="login.html" class="btn btn-outline">Login</a>
             </div>
@@ -56,26 +59,29 @@
 
     <main>
         <!-- Page Header -->
-        <section style="background-color: var(--color-card-bg); padding-top: calc(80px + var(--space-8)); padding-bottom: var(--space-8);">
+        <section
+            style="background-color: var(--color-card-bg); padding-top: calc(80px + var(--space-8)); padding-bottom: var(--space-8);">
             <div class="container text-center">
                 <h1 class="animate-slide-up">Get a Quote</h1>
-                <p class="lead animate-slide-up delay-1">Reach out to our experts for a fast, comprehensive scaffolding estimate.</p>
+                <p class="lead animate-slide-up delay-1">Reach out to our experts for a fast, comprehensive scaffolding
+                    estimate.</p>
             </div>
         </section>
 
         <section>
             <div class="container">
                 <div class="grid grid-2">
-                    
+
                     <!-- Contact Form -->
                     <div class="card" style="text-align: left; align-items: stretch; padding: 48px;">
                         <h3 style="text-align: left; margin-bottom: 24px;">Send us a message</h3>
-                        
+
                         <!-- Formspree / Netlify Action Placeholder -->
                         <form action="#" method="POST" id="contact-form">
-                            
+
                             <div class="form-group">
-                                <label class="form-label" for="client-type">I am a: <span class="text-error">*</span></label>
+                                <label class="form-label" for="client-type">I am a: <span
+                                        class="text-error">*</span></label>
                                 <select class="form-control" id="client-type" name="client_type" required>
                                     <option value="">Select your profile...</option>
                                     <option value="contractor">Construction Contractor</option>
@@ -85,33 +91,40 @@
                                 <span class="error-msg">Please select an option</span>
                             </div>
 
-                            <div class="grid" style="grid-template-columns: 1fr 1fr; gap: 16px; margin-bottom: 0;">
-                                <div class="form-group">
-                                    <label class="form-label" for="name">Full Name <span class="text-error">*</span></label>
-                                    <input type="text" class="form-control" id="name" name="name" required placeholder="John Doe">
-                                    <span class="error-msg">Name is required</span>
-                                </div>
-                                <div class="form-group">
-                                    <label class="form-label" for="phone">Phone Number <span class="text-error">*</span></label>
-                                    <input type="tel" class="form-control" id="phone" name="phone" required placeholder="07123 456789">
-                                    <span class="error-msg">Phone number is required</span>
-                                </div>
+                            <div class="form-group">
+                                <label class="form-label" for="name">Full Name <span class="text-error">*</span></label>
+                                <input type="text" class="form-control" id="name" name="name" required
+                                    placeholder="John Doe">
+                                <span class="error-msg">Name is required</span>
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label" for="phone">Phone Number <span
+                                        class="text-error">*</span></label>
+                                <input type="tel" class="form-control" id="phone" name="phone" required
+                                    placeholder="07123 456789">
+                                <span class="error-msg">Phone number is required</span>
                             </div>
 
+
                             <div class="form-group">
-                                <label class="form-label" for="email">Email Address <span class="text-error">*</span></label>
-                                <input type="email" class="form-control" id="email" name="email" required placeholder="john@example.com">
+                                <label class="form-label" for="email">Email Address <span
+                                        class="text-error">*</span></label>
+                                <input type="email" class="form-control" id="email" name="email" required
+                                    placeholder="john@example.com">
                                 <span class="error-msg">Enter a valid email</span>
                             </div>
-                            
+
                             <div class="form-group">
                                 <label class="form-label" for="postcode">Site Postcode</label>
-                                <input type="text" class="form-control" id="postcode" name="postcode" placeholder="e.g. E1 6AN">
+                                <input type="text" class="form-control" id="postcode" name="postcode"
+                                    placeholder="e.g. E1 6AN">
                             </div>
 
                             <div class="form-group">
-                                <label class="form-label" for="message">Project Details <span class="text-error">*</span></label>
-                                <textarea class="form-control" id="message" name="message" rows="5" required placeholder="Tell us about the structure, height, and duration required..."></textarea>
+                                <label class="form-label" for="message">Project Details <span
+                                        class="text-error">*</span></label>
+                                <textarea class="form-control" id="message" name="message" rows="5" required
+                                    placeholder="Tell us about the structure, height, and duration required..."></textarea>
                                 <span class="error-msg">Message is required</span>
                             </div>
 
@@ -122,31 +135,36 @@
                     <!-- Contact Details & Map -->
                     <div style="text-align: center; padding: 0 24px;">
                         <h2 style="text-align: center; margin-bottom: 32px;">Contact Details</h2>
-                        
+
                         <div style="display: flex; flex-direction: column; gap: 32px; margin-bottom: 48px;">
                             <div style="display: flex; flex-direction: column; gap: 12px; align-items: center;">
-                                <div style="background: rgba(181, 80, 46, 0.1); color: var(--color-primary); padding: 16px; border-radius: 50%; display: inline-flex;">
+                                <div
+                                    style="background: rgba(181, 80, 46, 0.1); color: var(--color-primary); padding: 16px; border-radius: 50%; display: inline-flex;">
                                     <i class="ph-fill ph-map-pin" style="font-size: 32px;"></i>
                                 </div>
                                 <div>
                                     <h4 style="margin-bottom: 4px;">Office & Yard</h4>
-                                    <p style="margin:0; color: var(--color-secondary);">123 Industrial Estate<br>London, E1 6AN<br>United Kingdom</p>
+                                    <p style="margin:0; color: var(--color-secondary);">123 Industrial Estate<br>London,
+                                        E1 6AN<br>United Kingdom</p>
                                 </div>
                             </div>
-                            
+
                             <div style="display: flex; flex-direction: column; gap: 12px; align-items: center;">
-                                <div style="background: rgba(181, 80, 46, 0.1); color: var(--color-primary); padding: 16px; border-radius: 50%; display: inline-flex;">
+                                <div
+                                    style="background: rgba(181, 80, 46, 0.1); color: var(--color-primary); padding: 16px; border-radius: 50%; display: inline-flex;">
                                     <i class="ph-fill ph-phone" style="font-size: 32px;"></i>
                                 </div>
                                 <div>
                                     <h4 style="margin-bottom: 4px;">Phone</h4>
                                     <p style="margin:0; color: var(--color-secondary);">+44 (0) 1234 567 890</p>
-                                    <p style="margin:0; font-size: var(--size-caption); color: var(--color-secondary);">Mon-Fri: 7am - 5pm</p>
+                                    <p style="margin:0; font-size: var(--size-caption); color: var(--color-secondary);">
+                                        Mon-Fri: 7am - 5pm</p>
                                 </div>
                             </div>
-                            
+
                             <div style="display: flex; flex-direction: column; gap: 12px; align-items: center;">
-                                <div style="background: rgba(181, 80, 46, 0.1); color: var(--color-primary); padding: 16px; border-radius: 50%; display: inline-flex;">
+                                <div
+                                    style="background: rgba(181, 80, 46, 0.1); color: var(--color-primary); padding: 16px; border-radius: 50%; display: inline-flex;">
                                     <i class="ph-fill ph-envelope" style="font-size: 32px;"></i>
                                 </div>
                                 <div>
@@ -154,7 +172,7 @@
                                     <p style="margin:0; color: var(--color-secondary);">info@scaffix.example.com</p>
                                 </div>
                             </div>
-                            
+
                             <!-- Social Icons -->
                             <style>
                                 .contact-social a {
@@ -168,6 +186,7 @@
                                     color: var(--color-primary);
                                     transition: all 0.3s ease;
                                 }
+
                                 .contact-social a:hover {
                                     background: var(--color-primary);
                                     color: #fff;
@@ -175,11 +194,16 @@
                                     box-shadow: 0 10px 20px rgba(181, 80, 46, 0.3);
                                 }
                             </style>
-                            <div class="contact-social" style="display: flex; gap: 16px; justify-content: center; margin-top: 16px;">
-                                <a href="#" aria-label="Facebook"><i class="ph-fill ph-facebook-logo" style="font-size: 28px;"></i></a>
-                                <a href="#" aria-label="X (formerly Twitter)"><i class="ph-fill ph-x-logo" style="font-size: 28px;"></i></a>
-                                <a href="#" aria-label="Instagram"><i class="ph-fill ph-instagram-logo" style="font-size: 28px;"></i></a>
-                                <a href="#" aria-label="LinkedIn"><i class="ph-fill ph-linkedin-logo" style="font-size: 28px;"></i></a>
+                            <div class="contact-social"
+                                style="display: flex; gap: 16px; justify-content: center; margin-top: 16px;">
+                                <a href="#" aria-label="Facebook"><i class="ph-fill ph-facebook-logo"
+                                        style="font-size: 28px;"></i></a>
+                                <a href="#" aria-label="X (formerly Twitter)"><i class="ph-fill ph-x-logo"
+                                        style="font-size: 28px;"></i></a>
+                                <a href="#" aria-label="Instagram"><i class="ph-fill ph-instagram-logo"
+                                        style="font-size: 28px;"></i></a>
+                                <a href="#" aria-label="LinkedIn"><i class="ph-fill ph-linkedin-logo"
+                                        style="font-size: 28px;"></i></a>
                             </div>
                         </div>
                     </div>
@@ -191,8 +215,12 @@
         <!-- Separate Map Section -->
         <section style="padding-top: 0;">
             <div class="container">
-                <div style="width: 100%; height: 450px; background: var(--color-card-bg); border: 1px solid var(--color-border); border-radius: var(--radius); overflow: hidden; box-shadow: 0 10px 30px rgba(0,0,0,0.05);">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d39744.020583091724!2d-0.15822365215757755!3d51.51684347712396!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487604c7c7eb9be3%3A0x3918653583725b56!2sLondon%20E1%206AN%2C%20UK!5e0!3m2!1sen!2sus!4v1718000000000!5m2!1sen!2sus" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <div
+                    style="width: 100%; height: 450px; background: var(--color-card-bg); border: 1px solid var(--color-border); border-radius: var(--radius); overflow: hidden; box-shadow: 0 10px 30px rgba(0,0,0,0.05);">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d39744.020583091724!2d-0.15822365215757755!3d51.51684347712396!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487604c7c7eb9be3%3A0x3918653583725b56!2sLondon%20E1%206AN%2C%20UK!5e0!3m2!1sen!2sus!4v1718000000000!5m2!1sen!2sus"
+                        width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
             </div>
         </section>
@@ -207,9 +235,10 @@
                     <a href="index.html" class="nav-brand" style="margin-bottom: 24px;">
                         <i class="ph-fill ph-buildings"></i> Scaffix
                     </a>
-                    <p style="font-size: var(--size-caption); max-width: 300px;">Premium scaffolding hire and erection services for commercial and domestic projects. 100% safety certified.</p>
+                    <p style="font-size: var(--size-caption); max-width: 300px;">Premium scaffolding hire and erection
+                        services for commercial and domestic projects. 100% safety certified.</p>
                 </div>
-                
+
                 <div class="footer-col">
                     <h4>Services</h4>
                     <div class="footer-links">
@@ -219,7 +248,7 @@
                         <a href="hire-rates.html">View Hire Rates</a>
                     </div>
                 </div>
-                
+
                 <div class="footer-col">
                     <h4>Trust</h4>
                     <div class="footer-links">
@@ -229,26 +258,32 @@
                         <a href="about.html">About Us</a>
                     </div>
                 </div>
-                
+
                 <div class="footer-col">
                     <h4>Contact</h4>
                     <div class="footer-links">
                         <a href="contact.html">Get a Quote</a>
                         <span>123 Industrial Estate<br>London, E1 6AN</span>
                         <a href="mailto:info@scaffix.example.com">info@scaffix.example.com</a>
+                        <!-- Socials -->
                         <div style="display: flex; gap: 16px; margin-top: 8px;">
-                            <a href="#" aria-label="Facebook"><i class="ph-fill ph-facebook-logo" style="font-size: 24px;"></i></a>
-                            <a href="#" aria-label="X (formerly Twitter)"><i class="ph-fill ph-x-logo" style="font-size: 24px;"></i></a>
-                            <a href="#" aria-label="LinkedIn"><i class="ph-fill ph-linkedin-logo" style="font-size: 24px;"></i></a>
+                            <a href="#" aria-label="Facebook"><i class="ph-fill ph-facebook-logo"
+                                    style="font-size: 24px;"></i></a>
+                            <a href="#" aria-label="LinkedIn"><i class="ph-fill ph-linkedin-logo"
+                                    style="font-size: 24px;"></i></a>
+                            <a href="#" aria-label="Instagram"><i class="ph-fill ph-instagram-logo"
+                                    style="font-size: 24px;"></i></a>
                         </div>
                     </div>
                 </div>
             </div>
+
             <div class="footer-bottom">
                 <p>&copy; 2026 Scaffix Ltd. All rights reserved.</p>
             </div>
         </div>
     </footer>
+
 
     <!-- Script to pre-select dropdown based on URL parameter (?type=contractor) -->
     <script>
@@ -266,4 +301,5 @@
     </script>
     <script src="assets/js/main.js"></script>
 </body>
+
 </html>

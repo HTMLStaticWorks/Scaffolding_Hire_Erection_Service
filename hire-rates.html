@@ -43,7 +43,7 @@
             <nav class="nav-menu">
                 <a href="index.html" class="nav-link">Home</a>
                 <a href="home2.html" class="nav-link">Home 2</a>
-            <a href="about.html" class="nav-link">About Us</a>
+                <a href="about.html" class="nav-link">About Us</a>
                 <a href="services.html" class="nav-link">Services</a>
                 <a href="hire-rates.html" class="nav-link active">Hire Rates</a>
                 <a href="safety-compliance.html" class="nav-link">Safety Compliance</a>
@@ -80,7 +80,7 @@
                         and duration.</p>
                 </div>
 
-                <div class="grid grid-3" style="align-items: stretch;">
+                <div id="hire-rates-grid" class="grid grid-3" style="align-items: stretch;">
                     <!-- Card 1 -->
                     <div class="card" style="display: flex; flex-direction: column; text-align: center; padding: 32px;">
                         <h3 style="margin-bottom: 8px;">Tube & Fitting</h3>
@@ -190,23 +190,31 @@
                         hours.</p>
                 </div>
 
-                <div class="card" style="max-width: 800px; margin: 0 auto; padding: 48px; align-items: stretch; text-align: left; box-shadow: 0 10px 30px rgba(0,0,0,0.05); border: 1px solid var(--color-border);">
-                    <form action="#" method="POST" style="display: flex; flex-direction: column; gap: 24px; width: 100%;">
-                        
+                <div class="card"
+                    style="max-width: 800px; margin: 0 auto; padding: 48px; align-items: stretch; text-align: left; box-shadow: 0 10px 30px rgba(0,0,0,0.05); border: 1px solid var(--color-border);">
+                    <form action="#" method="POST"
+                        style="display: flex; flex-direction: column; gap: 24px; width: 100%;">
+
                         <div style="display: flex; flex-direction: column; gap: 8px;">
-                            <label for="fullName" style="font-weight: 600; color: var(--color-heading); font-size: 0.95rem;">Full Name *</label>
+                            <label for="fullName"
+                                style="font-weight: 600; color: var(--color-heading); font-size: 0.95rem;">Full Name
+                                *</label>
                             <input type="text" id="fullName" name="fullName" required placeholder="E.g. John Doe"
                                 style="width: 100%; padding: 14px 16px; border: 1px solid var(--color-border); border-radius: var(--radius-md); background: var(--color-bg); color: var(--color-text); font-family: inherit; font-size: 1rem; transition: all 0.3s ease; box-sizing: border-box; outline: none;">
                         </div>
 
                         <div class="grid grid-2" style="gap: 24px;">
                             <div style="display: flex; flex-direction: column; gap: 8px;">
-                                <label for="email" style="font-weight: 600; color: var(--color-heading); font-size: 0.95rem;">Email Address *</label>
+                                <label for="email"
+                                    style="font-weight: 600; color: var(--color-heading); font-size: 0.95rem;">Email
+                                    Address *</label>
                                 <input type="email" id="email" name="email" required placeholder="john@example.com"
                                     style="width: 100%; padding: 14px 16px; border: 1px solid var(--color-border); border-radius: var(--radius-md); background: var(--color-bg); color: var(--color-text); font-family: inherit; font-size: 1rem; transition: all 0.3s ease; box-sizing: border-box; outline: none;">
                             </div>
                             <div style="display: flex; flex-direction: column; gap: 8px;">
-                                <label for="phone" style="font-weight: 600; color: var(--color-heading); font-size: 0.95rem;">Phone Number *</label>
+                                <label for="phone"
+                                    style="font-weight: 600; color: var(--color-heading); font-size: 0.95rem;">Phone
+                                    Number *</label>
                                 <input type="tel" id="phone" name="phone" required placeholder="07123 456 789"
                                     style="width: 100%; padding: 14px 16px; border: 1px solid var(--color-border); border-radius: var(--radius-md); background: var(--color-bg); color: var(--color-text); font-family: inherit; font-size: 1rem; transition: all 0.3s ease; box-sizing: border-box; outline: none;">
                             </div>
@@ -214,7 +222,9 @@
 
                         <div class="grid grid-2" style="gap: 24px;">
                             <div style="display: flex; flex-direction: column; gap: 8px;">
-                                <label for="projectType" style="font-weight: 600; color: var(--color-heading); font-size: 0.95rem;">Project Type *</label>
+                                <label for="projectType"
+                                    style="font-weight: 600; color: var(--color-heading); font-size: 0.95rem;">Project
+                                    Type *</label>
                                 <select id="projectType" name="projectType" required
                                     style="width: 100%; padding: 14px 16px; border: 1px solid var(--color-border); border-radius: var(--radius-md); background: var(--color-bg); color: var(--color-text); font-family: inherit; font-size: 1rem; transition: all 0.3s ease; box-sizing: border-box; outline: none; cursor: pointer; appearance: auto;">
                                     <option value="" disabled selected>Select Project Type</option>
@@ -225,7 +235,9 @@
                                 </select>
                             </div>
                             <div style="display: flex; flex-direction: column; gap: 8px;">
-                                <label for="scaffoldType" style="font-weight: 600; color: var(--color-heading); font-size: 0.95rem;">Scaffold Type required</label>
+                                <label for="scaffoldType"
+                                    style="font-weight: 600; color: var(--color-heading); font-size: 0.95rem;">Scaffold
+                                    Type required</label>
                                 <select id="scaffoldType" name="scaffoldType"
                                     style="width: 100%; padding: 14px 16px; border: 1px solid var(--color-border); border-radius: var(--radius-md); background: var(--color-bg); color: var(--color-text); font-family: inherit; font-size: 1rem; transition: all 0.3s ease; box-sizing: border-box; outline: none; cursor: pointer; appearance: auto;">
                                     <option value="" disabled selected>Not Sure</option>
@@ -239,33 +251,43 @@
                         </div>
 
                         <div style="display: flex; flex-direction: column; gap: 8px;">
-                            <label for="address" style="font-weight: 600; color: var(--color-heading); font-size: 0.95rem;">Site Address *</label>
-                            <input type="text" id="address" name="address" required placeholder="123 Example Street, City, Postcode"
+                            <label for="address"
+                                style="font-weight: 600; color: var(--color-heading); font-size: 0.95rem;">Site Address
+                                *</label>
+                            <input type="text" id="address" name="address" required
+                                placeholder="123 Example Street, City, Postcode"
                                 style="width: 100%; padding: 14px 16px; border: 1px solid var(--color-border); border-radius: var(--radius-md); background: var(--color-bg); color: var(--color-text); font-family: inherit; font-size: 1rem; transition: all 0.3s ease; box-sizing: border-box; outline: none;">
                         </div>
 
                         <div class="grid grid-2" style="gap: 24px;">
                             <div style="display: flex; flex-direction: column; gap: 8px;">
-                                <label for="startDate" style="font-weight: 600; color: var(--color-heading); font-size: 0.95rem;">Estimated Start Date</label>
+                                <label for="startDate"
+                                    style="font-weight: 600; color: var(--color-heading); font-size: 0.95rem;">Estimated
+                                    Start Date</label>
                                 <input type="date" id="startDate" name="startDate"
                                     style="width: 100%; padding: 14px 16px; border: 1px solid var(--color-border); border-radius: var(--radius-md); background: var(--color-bg); color: var(--color-text); font-family: inherit; font-size: 1rem; transition: all 0.3s ease; box-sizing: border-box; outline: none;">
                             </div>
                             <div style="display: flex; flex-direction: column; gap: 8px;">
-                                <label for="duration" style="font-weight: 600; color: var(--color-heading); font-size: 0.95rem;">Estimated Duration (Weeks)</label>
+                                <label for="duration"
+                                    style="font-weight: 600; color: var(--color-heading); font-size: 0.95rem;">Estimated
+                                    Duration (Weeks)</label>
                                 <input type="number" id="duration" name="duration" min="1" placeholder="e.g. 4"
                                     style="width: 100%; padding: 14px 16px; border: 1px solid var(--color-border); border-radius: var(--radius-md); background: var(--color-bg); color: var(--color-text); font-family: inherit; font-size: 1rem; transition: all 0.3s ease; box-sizing: border-box; outline: none;">
                             </div>
                         </div>
 
                         <div style="display: flex; flex-direction: column; gap: 8px;">
-                            <label for="details" style="font-weight: 600; color: var(--color-heading); font-size: 0.95rem;">Additional Details</label>
+                            <label for="details"
+                                style="font-weight: 600; color: var(--color-heading); font-size: 0.95rem;">Additional
+                                Details</label>
                             <textarea id="details" name="details" rows="5"
                                 placeholder="Please describe any specific requirements, height estimates, or access challenges..."
                                 style="width: 100%; padding: 16px; border: 1px solid var(--color-border); border-radius: var(--radius-md); background: var(--color-bg); color: var(--color-text); font-family: inherit; font-size: 1rem; transition: all 0.3s ease; box-sizing: border-box; outline: none; resize: vertical;"></textarea>
                         </div>
 
                         <button type="submit" class="btn btn-primary"
-                            style="width: 100%; justify-content: center; margin-top: 16px; padding: 16px; font-size: 1.1rem; box-shadow: 0 4px 12px rgba(230,57,70,0.2);">Request Custom Quote</button>
+                            style="width: 100%; justify-content: center; margin-top: 16px; padding: 16px; font-size: 1.1rem; box-shadow: 0 4px 12px rgba(230,57,70,0.2);">Request
+                            Custom Quote</button>
                     </form>
                 </div>
             </div>
@@ -311,20 +333,25 @@
                         <a href="contact.html">Get a Quote</a>
                         <span>123 Industrial Estate<br>London, E1 6AN</span>
                         <a href="mailto:info@scaffix.example.com">info@scaffix.example.com</a>
+                        <!-- Socials -->
                         <div style="display: flex; gap: 16px; margin-top: 8px;">
                             <a href="#" aria-label="Facebook"><i class="ph-fill ph-facebook-logo"
                                     style="font-size: 24px;"></i></a>
                             <a href="#" aria-label="LinkedIn"><i class="ph-fill ph-linkedin-logo"
                                     style="font-size: 24px;"></i></a>
+                            <a href="#" aria-label="Instagram"><i class="ph-fill ph-instagram-logo"
+                                    style="font-size: 24px;"></i></a>
                         </div>
                     </div>
                 </div>
             </div>
+
             <div class="footer-bottom">
                 <p>&copy; 2026 Scaffix Ltd. All rights reserved.</p>
             </div>
         </div>
     </footer>
+
 
     <script src="assets/js/main.js"></script>
 </body>
