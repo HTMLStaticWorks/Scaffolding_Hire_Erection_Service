@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Safety & Scaffolding Blog | Scaffix</title>
+    
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/rtl.css">
+        <style>
+        .blog-filter {
+            transition: all 0.3s ease;
+        }
+        .blog-filter:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            color: #fff;
+            background-color: var(--color-primary);
+            border-color: var(--color-primary);
+        }
+        
+        /* New styles for read more */
+        .card-content {
+            display: flex;
+            flex-direction: column;
+            flex-grow: 1;
+            padding: 32px;
+        }
+        .read-more-link {
+            color: var(--color-primary) !important;
+            font-weight: 700 !important;
+            display: inline-flex !important;
+            align-items: center !important;
+            gap: 8px !important;
+            margin-top: auto !important;
+            transition: all 0.3s ease !important;
+            text-decoration: none !important;
+        }
+        .read-more-link:hover {
+            color: var(--color-accent) !important;
+        }
+        .read-more-link i {
+            transition: transform 0.3s ease;
+        }
+        .read-more-link:hover i {
+            transform: translateX(5px);
+        }
+        article.card {
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+        }
+        article.card > img {
+            width: 100%;
+            height: 240px;
+            object-fit: cover;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="drawer-overlay"></div>
+
+    <div class="mobile-drawer">
+        <button class="icon-btn drawer-close" aria-label="Close menu"><i class="ph ph-x"></i></button>
+        <nav class="drawer-nav">
+            <a href="index.html" class="nav-link">Home</a>
+            <a href="home2.html" class="nav-link">Home 2</a>
+            <a href="about.html" class="nav-link">About Us</a>
+            <a href="services.html" class="nav-link">Services</a>
+            <a href="hire-rates.html" class="nav-link">Hire Rates</a>
+            <a href="safety-compliance.html" class="nav-link">Safety Compliance</a>
+            <a href="blog.html" class="nav-link active">Blog</a>
+            <a href="contact.html" class="nav-link">Contact</a>
+        </nav>
+        <div class="drawer-actions">
+            <button class="icon-btn theme-toggle" aria-label="Toggle dark mode"><i class="ph ph-moon"></i></button>
+            <button class="icon-btn rtl-toggle" aria-label="Toggle RTL"><i class="ph ph-arrows-left-right"></i></button>
+            <a href="login.html" class="btn btn-outline btn-full">Login</a>
+        </div>
+    </div>
+
+    <header class="navbar">
+        <div class="container navbar-container">
+            <a href="index.html" class="nav-brand"><i class="ph-fill ph-buildings"></i> Scaffix</a>
+            <nav class="nav-menu">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="home2.html" class="nav-link">Home 2</a>
+            <a href="about.html" class="nav-link">About Us</a>
+                <a href="services.html" class="nav-link">Services</a>
+            <a href="hire-rates.html" class="nav-link">Hire Rates</a>
+                <a href="safety-compliance.html" class="nav-link">Safety Compliance</a>
+                <a href="blog.html" class="nav-link active">Blog</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+            </nav>
+            <div class="nav-actions">
+                <button class="icon-btn rtl-toggle" aria-label="Toggle RTL"><i class="ph ph-arrows-left-right"></i></button>
+                <button class="icon-btn theme-toggle" aria-label="Toggle dark mode"><i class="ph ph-moon"></i></button>
+                <a href="login.html" class="btn btn-outline">Login</a>
+            </div>
+            <button class="hamburger" aria-label="Open menu"><i class="ph ph-list"></i></button>
+        </div>
+    </header>
+
+    <main>
+        <section style="background-color: var(--color-card-bg); padding-top: calc(80px + var(--space-8)); padding-bottom: var(--space-8);">
+            <div class="container text-center">
+                <h1 class="animate-slide-up">Latest Insights</h1>
+                <p class="lead animate-slide-up delay-1">Updates, guides, and safety alerts from the Scaffix team.</p>
+            </div>
+        </section>
+
+        <section>
+            <div class="container">
+                <!-- Blog Filter (Visual only placeholder) -->
+                <div style="display: flex; gap: 16px; justify-content: center; margin-bottom: 48px; flex-wrap: wrap;">
+                    <span class="badge primary blog-filter" style="background: var(--color-primary); color: #fff; cursor: pointer;">All</span>
+                    <span class="badge blog-filter" style="cursor: pointer;">Site Safety</span>
+                    <span class="badge blog-filter" style="cursor: pointer;">Hire Guides</span>
+                    <span class="badge blog-filter" style="cursor: pointer;">Project Case Studies</span>
+                    <span class="badge blog-filter" style="cursor: pointer;">Regulations</span>
+                </div>
+
+                <div class="grid grid-3">
+                    <!-- Article 1 -->
+                    <article class="card" style="padding: 0; overflow: hidden; align-items: flex-start; text-align: left;">
+                        <img src="https://images.unsplash.com/photo-1541888081622-1f41d3d63c2c?auto=format&fit=crop&w=600&h=400&q=80" alt="Blog image" style="width: 100%; height: 240px; object-fit: cover;">
+                        <div class="card-content">
+                            <div style="display: flex; gap: 8px; margin-bottom: 16px;">
+                                <span class="badge primary">Site Safety</span>
+                                <span style="color: var(--color-secondary); font-size: var(--size-caption);">Oct 12, 2026</span>
+                            </div>
+                            <h3 style="font-size: var(--size-h4); margin-bottom: 12px;"><a href="blog-single.html">Preparing Your Site for Winter Weather</a></h3>
+                            <p style="font-size: var(--size-label);">High winds and icy conditions require strict preventative measures. Here's how to secure your scaffolding.</p>
+                            <a href="blog-single.html" class="read-more-link">Read More <i class="ph ph-arrow-right"></i></a>
+                        </div>
+                    </article>
+
+                    <!-- Article 2 -->
+                    <article class="card" style="padding: 0; overflow: hidden; align-items: flex-start; text-align: left;">
+                        <img src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=600&h=400&q=80" alt="Blog image" style="width: 100%; height: 240px; object-fit: cover;">
+                        <div class="card-content">
+                            <div style="display: flex; gap: 8px; margin-bottom: 16px;">
+                                <span class="badge accent">Project Case Studies</span>
+                                <span style="color: var(--color-secondary); font-size: var(--size-caption);">Sep 28, 2026</span>
+                            </div>
+                            <h3 style="font-size: var(--size-h4); margin-bottom: 12px;"><a href="blog-single.html">The Historic Facade Restoration at Bank St.</a></h3>
+                            <p style="font-size: var(--size-label);">How we designed a cantilevered access solution that didn't disrupt the active pedestrian street below.</p>
+                            <a href="blog-single.html" class="read-more-link">Read More <i class="ph ph-arrow-right"></i></a>
+                        </div>
+                    </article>
+
+                    <!-- Article 3 -->
+                    <article class="card" style="padding: 0; overflow: hidden; align-items: flex-start; text-align: left;">
+                        <img src="https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&w=600&h=400&q=80" alt="Blog image" style="width: 100%; height: 240px; object-fit: cover;">
+                        <div class="card-content">
+                            <div style="display: flex; gap: 8px; margin-bottom: 16px;">
+                                <span class="badge primary">Hire Guides</span>
+                                <span style="color: var(--color-secondary); font-size: var(--size-caption);">Sep 15, 2026</span>
+                            </div>
+                            <h3 style="font-size: var(--size-h4); margin-bottom: 12px;"><a href="blog-single.html">Homeowners: Do You Need a Street Permit?</a></h3>
+                            <p style="font-size: var(--size-label);">If scaffolding needs to sit on a public pavement, you need a license. We explain the process.</p>
+                            <a href="blog-single.html" class="read-more-link">Read More <i class="ph ph-arrow-right"></i></a>
+                        </div>
+                    </article>
+
+                    <!-- Article 4 -->
+                    <article class="card" style="padding: 0; overflow: hidden; align-items: flex-start; text-align: left;">
+                        <img src="https://images.unsplash.com/photo-1508450859948-4e04fabaa4ea?auto=format&fit=crop&w=600&h=400&q=80" alt="Blog image" style="width: 100%; height: 240px; object-fit: cover;">
+                        <div class="card-content">
+                            <div style="display: flex; gap: 8px; margin-bottom: 16px;">
+                                <span class="badge primary">Regulations</span>
+                                <span style="color: var(--color-secondary); font-size: var(--size-caption);">Aug 30, 2026</span>
+                            </div>
+                            <h3 style="font-size: var(--size-h4); margin-bottom: 12px;"><a href="blog-single.html">Understanding TG20:21 Changes</a></h3>
+                            <p style="font-size: var(--size-label);">The latest good practice guidelines for tube and fitting scaffolding and what they mean for your site.</p>
+                            <a href="blog-single.html" class="read-more-link">Read More <i class="ph ph-arrow-right"></i></a>
+                        </div>
+                    </article>
+
+                    <!-- Article 5 -->
+                    <article class="card" style="padding: 0; overflow: hidden; align-items: flex-start; text-align: left;">
+                        <img src="https://images.unsplash.com/photo-1582268611958-ebfd161ef9cf?auto=format&fit=crop&w=600&h=400&q=80" alt="Blog image" style="width: 100%; height: 240px; object-fit: cover;">
+                        <div class="card-content">
+                            <div style="display: flex; gap: 8px; margin-bottom: 16px;">
+                                <span class="badge">Hire Guides</span>
+                                <span style="color: var(--color-secondary); font-size: var(--size-caption);">Aug 15, 2026</span>
+                            </div>
+                            <h3 style="font-size: var(--size-h4); margin-bottom: 12px;"><a href="blog-single.html">Choosing the Right Scaffold Type</a></h3>
+                            <p style="font-size: var(--size-label);">From tube and fitting to system scaffold, discover which option is the most cost-effective for your specific project.</p>
+                            <a href="blog-single.html" class="read-more-link">Read More <i class="ph ph-arrow-right"></i></a>
+                        </div>
+                    </article>
+
+                    <!-- Article 6 -->
+                    <article class="card" style="padding: 0; overflow: hidden; align-items: flex-start; text-align: left;">
+                        <img src="https://images.unsplash.com/photo-1531834685032-c34bf0d84c77?auto=format&fit=crop&w=600&h=400&q=80" alt="Blog image" style="width: 100%; height: 240px; object-fit: cover;">
+                        <div class="card-content">
+                            <div style="display: flex; gap: 8px; margin-bottom: 16px;">
+                                <span class="badge accent">Site Safety</span>
+                                <span style="color: var(--color-secondary); font-size: var(--size-caption);">Jul 22, 2026</span>
+                            </div>
+                            <h3 style="font-size: var(--size-h4); margin-bottom: 12px;"><a href="blog-single.html">Daily Inspection Checklist</a></h3>
+                            <p style="font-size: var(--size-label);">A comprehensive guide to the daily checks every site manager should perform before workers step onto the scaffolding.</p>
+                            <a href="blog-single.html" class="read-more-link">Read More <i class="ph ph-arrow-right"></i></a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section style="background-color: var(--color-card-bg); padding: 80px 0; border-top: 1px solid var(--color-border);">
+            <div class="container">
+                <div class="section-header text-center">
+                    <h2>Frequently Asked Questions</h2>
+                    <p>Common questions about scaffolding hire and regulations.</p>
+                </div>
+                <div style="max-width: 800px; margin: 0 auto; display: flex; flex-direction: column; gap: 16px;">
+                    <!-- FAQ 1 -->
+                    <div class="faq-card" onclick="this.classList.toggle('active')">
+                        <div style="display: flex; justify-content: space-between; align-items: center;">
+                            <h4 style="margin: 0; font-size: 1.15rem; color: var(--color-heading);">Do I need a permit for my scaffolding?</h4>
+                            <i class="ph ph-caret-down text-primary" style="font-size: 24px; transition: transform 0.3s ease;"></i>
+                        </div>
+                        <div class="faq-content">
+                            <p style="margin: 0;">If the scaffolding needs to be placed on a public highway or pavement, you will legally require a street permit from your local council. Scaffix handles this entire application process for you to ensure full compliance before work begins.</p>
+                        </div>
+                    </div>
+                    <!-- FAQ 2 -->
+                    <div class="faq-card" onclick="this.classList.toggle('active')">
+                        <div style="display: flex; justify-content: space-between; align-items: center;">
+                            <h4 style="margin: 0; font-size: 1.15rem; color: var(--color-heading);">How long does it take to erect scaffolding?</h4>
+                            <i class="ph ph-caret-down text-primary" style="font-size: 24px; transition: transform 0.3s ease;"></i>
+                        </div>
+                        <div class="faq-content">
+                            <p style="margin: 0;">It depends entirely on the size and complexity of the project. A standard residential tower can be erected in a few hours, whereas large commercial projects with temporary roofs or suspended access may take several days or even weeks.</p>
+                        </div>
+                    </div>
+                    <!-- FAQ 3 -->
+                    <div class="faq-card" onclick="this.classList.toggle('active')">
+                        <div style="display: flex; justify-content: space-between; align-items: center;">
+                            <h4 style="margin: 0; font-size: 1.15rem; color: var(--color-heading);">How often is the scaffolding inspected?</h4>
+                            <i class="ph ph-caret-down text-primary" style="font-size: 24px; transition: transform 0.3s ease;"></i>
+                        </div>
+                        <div class="faq-content">
+                            <p style="margin: 0;">By law, scaffolding must be inspected prior to handover, every 7 days while erected, and immediately following adverse weather conditions. Our certified inspectors perform and log all these checks meticulously.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <style>
+                .faq-card {
+                    background: var(--color-card-bg);
+                    border: 1px solid var(--color-border);
+                    border-radius: var(--radius);
+                    padding: 24px;
+                    box-shadow: 0 4px 12px rgba(0,0,0,0.03);
+                    cursor: pointer;
+                    text-align: left;
+                    transition: all 0.3s ease;
+                }
+                .faq-card:hover {
+                    box-shadow: 0 10px 24px rgba(0,0,0,0.08);
+                    border-color: var(--color-primary);
+                }
+                .faq-content {
+                    margin-top: 16px;
+                    color: var(--color-secondary);
+                    display: none;
+                    line-height: 1.6;
+                }
+                .faq-card.active .ph-caret-down {
+                    transform: rotate(180deg);
+                }
+                .faq-card.active .faq-content {
+                    display: block !important;
+                    animation: fadeIn 0.3s ease-in-out;
+                }
+                @keyframes fadeIn {
+                    from { opacity: 0; transform: translateY(-10px); }
+                    to { opacity: 1; transform: translateY(0); }
+                }
+            </style>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <a href="index.html" class="nav-brand" style="margin-bottom: 24px;">
+                        <i class="ph-fill ph-buildings"></i> Scaffix
+                    </a>
+                    <p style="font-size: var(--size-caption); max-width: 300px;">Premium scaffolding hire and erection services for commercial and domestic projects. 100% safety certified.</p>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>Services</h4>
+                    <div class="footer-links">
+                        <a href="services.html#tube-fitting">Tube & Fitting</a>
+                        <a href="services.html#system-scaffold">System Scaffold</a>
+                        <a href="services.html#mobile-tower">Mobile Towers</a>
+                        <a href="hire-rates.html">View Hire Rates</a>
+                    </div>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>Trust</h4>
+                    <div class="footer-links">
+                        <a href="safety-compliance.html">Safety Compliance</a>
+                        <a href="safety-compliance.html#inspections">Inspection Schedules</a>
+                        <a href="safety-compliance.html#downloads">Download RAMS</a>
+                        <a href="about.html">About Us</a>
+                    </div>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>Contact</h4>
+                    <div class="footer-links">
+                        <a href="contact.html">Get a Quote</a>
+                        <span>123 Industrial Estate<br>London, E1 6AN</span>
+                        <a href="mailto:info@scaffix.example.com">info@scaffix.example.com</a>
+                        <div style="display: flex; gap: 16px; margin-top: 8px;">
+                            <a href="#" aria-label="Facebook"><i class="ph-fill ph-facebook-logo" style="font-size: 24px;"></i></a>
+                            <a href="#" aria-label="LinkedIn"><i class="ph-fill ph-linkedin-logo" style="font-size: 24px;"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Scaffix Ltd. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/js/main.js"></script>
+</body>
+</html>

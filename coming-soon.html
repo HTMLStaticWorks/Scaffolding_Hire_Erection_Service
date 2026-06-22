@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coming Soon | Scaffix</title>
+    
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/rtl.css">
+</head>
+<body>
+
+    <!-- Minimal Header for Coming Soon -->
+    <header class="navbar">
+        <div class="container navbar-container" style="justify-content: center;">
+            <a href="index.html" class="nav-brand">
+                <i class="ph-fill ph-buildings"></i> Scaffix
+            </a>
+        </div>
+    </header>
+
+    <main>
+        <section style="min-height: 100vh; display: flex; align-items: center; justify-content: center; text-align: center; padding-top: 80px; background-color: var(--color-card-bg);">
+            <div class="container" style="max-width: 600px;">
+                <div class="badge accent animate-fade-in" style="margin-bottom: 24px;">
+                    <i class="ph-fill ph-hammer" style="margin-right: 8px;"></i> Under Construction
+                </div>
+                <h1 class="animate-slide-up delay-1" style="margin-bottom: 24px;">We're building something solid.</h1>
+                <p class="lead animate-slide-up delay-2" style="margin-bottom: 48px;">Our new contractor portal and rapid-quote system is currently under development.</p>
+                
+                <!-- Countdown -->
+                <div class="animate-slide-up delay-3" style="display: flex; gap: 24px; justify-content: center; margin-bottom: 48px;">
+                    <div style="background: var(--color-bg); border: 1px solid var(--color-border); padding: 16px; border-radius: var(--radius); width: 100px; box-shadow: var(--shadow);">
+                        <h2 style="margin:0; color: var(--color-primary);">14</h2>
+                        <span style="font-size: var(--size-caption); color: var(--color-secondary);">Days</span>
+                    </div>
+                    <div style="background: var(--color-bg); border: 1px solid var(--color-border); padding: 16px; border-radius: var(--radius); width: 100px; box-shadow: var(--shadow);">
+                        <h2 style="margin:0; color: var(--color-primary);">08</h2>
+                        <span style="font-size: var(--size-caption); color: var(--color-secondary);">Hours</span>
+                    </div>
+                    <div style="background: var(--color-bg); border: 1px solid var(--color-border); padding: 16px; border-radius: var(--radius); width: 100px; box-shadow: var(--shadow);">
+                        <h2 style="margin:0; color: var(--color-primary);">45</h2>
+                        <span style="font-size: var(--size-caption); color: var(--color-secondary);">Mins</span>
+                    </div>
+                </div>
+
+                <!-- Newsletter / Notify form -->
+                <form action="#" method="POST" id="notify-form" class="animate-slide-up delay-4" style="display: flex; flex-direction: column; gap: 16px;">
+                    <div class="form-group" style="margin: 0;">
+                        <input type="email" class="form-control" name="email" required placeholder="Enter your email to be notified..." style="text-align: center;">
+                        <span class="error-msg" style="text-align: center;">Enter a valid email address</span>
+                    </div>
+                    <!-- Mailchimp Embed Placeholder comment: -->
+                    <!-- MAILCHIMP_EMBED_HERE -->
+                    <button type="submit" class="btn btn-primary btn-full">Notify Me When Live</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <script src="assets/js/main.js"></script>
+</body>
+</html>

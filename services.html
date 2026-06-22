@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services & Hire Rates | Scaffix</title>
+
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/rtl.css">
+</head>
+
+<body>
+
+    <!-- Drawer Overlay -->
+    <div class="drawer-overlay"></div>
+
+    <!-- Mobile Drawer -->
+    <div class="mobile-drawer">
+        <button class="icon-btn drawer-close" aria-label="Close menu"><i class="ph ph-x"></i></button>
+        <nav class="drawer-nav">
+            <a href="index.html" class="nav-link">Home</a>
+            <a href="home2.html" class="nav-link">Home 2</a>
+            <a href="about.html" class="nav-link">About Us</a>
+            <a href="services.html" class="nav-link active">Services</a>
+            <a href="hire-rates.html" class="nav-link">Hire Rates</a>
+            <a href="safety-compliance.html" class="nav-link">Safety Compliance</a>
+            <a href="blog.html" class="nav-link">Blog</a>
+            <a href="contact.html" class="nav-link">Contact</a>
+        </nav>
+        <div class="drawer-actions">
+            <button class="icon-btn theme-toggle" aria-label="Toggle dark mode"><i class="ph ph-moon"></i></button>
+            <button class="icon-btn rtl-toggle" aria-label="Toggle RTL"><i class="ph ph-arrows-left-right"></i></button>
+            <a href="login.html" class="btn btn-outline btn-full">Login</a>
+        </div>
+    </div>
+
+    <!-- Navbar -->
+    <header class="navbar">
+        <div class="container navbar-container">
+            <a href="index.html" class="nav-brand"><i class="ph-fill ph-buildings"></i> Scaffix</a>
+            <nav class="nav-menu">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="home2.html" class="nav-link">Home 2</a>
+            <a href="about.html" class="nav-link">About Us</a>
+                <a href="services.html" class="nav-link active">Services</a>
+                <a href="hire-rates.html" class="nav-link">Hire Rates</a>
+                <a href="safety-compliance.html" class="nav-link">Safety Compliance</a>
+                <a href="blog.html" class="nav-link">Blog</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+            </nav>
+            <div class="nav-actions">
+                <button class="icon-btn rtl-toggle" aria-label="Toggle RTL"><i
+                        class="ph ph-arrows-left-right"></i></button>
+                <button class="icon-btn theme-toggle" aria-label="Toggle dark mode"><i class="ph ph-moon"></i></button>
+                <a href="login.html" class="btn btn-outline">Login</a>
+            </div>
+            <button class="hamburger" aria-label="Open menu"><i class="ph ph-list"></i></button>
+        </div>
+    </header>
+
+    <main>
+        <!-- Page Header -->
+        <section
+            style="background-color: var(--color-card-bg); padding-top: calc(80px + var(--space-8)); padding-bottom: var(--space-8);">
+            <div class="container text-center">
+                <h1 class="animate-slide-up">Scaffold Types & Rates</h1>
+                <p class="lead animate-slide-up delay-1">Comprehensive access solutions for any height, structure, or
+                    timeframe.</p>
+            </div>
+        </section>
+
+        <!-- Scaffold Types Grid -->
+        <section id="types">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Our Scaffold Types</h2>
+                    <p>Engineered strictly to TG20:21 compliance. Whatever your site requires, we build it safely.</p>
+                </div>
+
+                <div class="grid grid-3">
+
+                    <!-- Tube & Fitting -->
+                    <div class="card" id="tube-fitting"
+                        style="padding: 0; overflow: hidden; align-items: flex-start; text-align: left;">
+                        <img src="assets/images/type-tube-fitting.jpg"
+                            alt="Traditional tube and fitting scaffolding on a brick building facade"
+                            style="width: 100%; height: 200px; object-fit: cover;">
+                        <div
+                            style="padding: var(--space-6); display: flex; flex-direction: column; gap: var(--space-3); width: 100%;">
+                            <i class="ph ph-wall card-icon" style="margin-bottom: 0;"></i>
+                            <div class="badge primary" style="align-self: flex-start;">Both</div>
+                            <h3>Tube & Fitting</h3>
+                            <p style="color: var(--color-secondary);">The traditional standard. Highly adaptable for
+                                complex structures, uneven ground, and unique architectural features.</p>
+                        </div>
+                    </div>
+
+                    <!-- System / Frame -->
+                    <div class="card" id="system-scaffold"
+                        style="padding: 0; overflow: hidden; align-items: flex-start; text-align: left;">
+                        <img src="assets/images/type-system-scaffold.jpg"
+                            alt="Modular system scaffolding on a large straight commercial building"
+                            style="width: 100%; height: 200px; object-fit: cover;">
+                        <div
+                            style="padding: var(--space-6); display: flex; flex-direction: column; gap: var(--space-3); width: 100%;">
+                            <i class="ph ph-columns card-icon" style="margin-bottom: 0;"></i>
+                            <div class="badge primary" style="align-self: flex-start;">Contractor</div>
+                            <h3>System Scaffold</h3>
+                            <p style="color: var(--color-secondary);">Prefabricated modular components allowing for
+                                rapid deployment on straight elevations and large commercial sites.</p>
+                        </div>
+                    </div>
+
+                    <!-- Mobile Tower -->
+                    <div class="card" id="mobile-tower"
+                        style="padding: 0; overflow: hidden; align-items: flex-start; text-align: left;">
+                        <img src="assets/images/type-mobile-tower.jpg"
+                            alt="Aluminium mobile scaffold tower with lockable castors on a warehouse floor"
+                            style="width: 100%; height: 200px; object-fit: cover;">
+                        <div
+                            style="padding: var(--space-6); display: flex; flex-direction: column; gap: var(--space-3); width: 100%;">
+                            <i class="ph ph-ladder card-icon" style="margin-bottom: 0;"></i>
+                            <div class="badge accent" style="align-self: flex-start;">Both</div>
+                            <h3>Mobile Towers</h3>
+                            <p style="color: var(--color-secondary);">Aluminium towers on lockable castors. Perfect for
+                                short-term interior maintenance or quick exterior fixes.</p>
+                        </div>
+                    </div>
+
+                    <!-- Cantilever -->
+                    <div class="card" id="cantilever"
+                        style="padding: 0; overflow: hidden; align-items: flex-start; text-align: left;">
+                        <img src="assets/images/type-cantilever.jpg"
+                            alt="Cantilever scaffolding projecting over a pedestrian pavement from a building"
+                            style="width: 100%; height: 200px; object-fit: cover;">
+                        <div
+                            style="padding: var(--space-6); display: flex; flex-direction: column; gap: var(--space-3); width: 100%;">
+                            <i class="ph ph-arrow-square-out card-icon" style="margin-bottom: 0;"></i>
+                            <div class="badge primary" style="align-self: flex-start;">Contractor</div>
+                            <h3>Cantilever Scaffold</h3>
+                            <p style="color: var(--color-secondary);">Suspended or projecting structures built when
+                                ground access is impossible or obstructed by existing features.</p>
+                        </div>
+                    </div>
+
+                    <!-- Birdcage -->
+                    <div class="card" id="birdcage"
+                        style="padding: 0; overflow: hidden; align-items: flex-start; text-align: left;">
+                        <img src="assets/images/type-birdcage.jpg"
+                            alt="Interior birdcage scaffold filling a large building space with flat working platform"
+                            style="width: 100%; height: 200px; object-fit: cover;">
+                        <div
+                            style="padding: var(--space-6); display: flex; flex-direction: column; gap: var(--space-3); width: 100%;">
+                            <i class="ph ph-squares-four card-icon" style="margin-bottom: 0;"></i>
+                            <div class="badge primary" style="align-self: flex-start;">Contractor</div>
+                            <h3>Birdcage Scaffold</h3>
+                            <p style="color: var(--color-secondary);">Independent interior scaffolding structure forming
+                                a large flat crash deck for ceiling or high-level wall work.</p>
+                        </div>
+                    </div>
+
+                    <!-- Edge Protection -->
+                    <div class="card" id="edge-protection"
+                        style="padding: 0; overflow: hidden; align-items: flex-start; text-align: left;">
+                        <img src="assets/images/type-edge-protection.jpg"
+                            alt="Edge protection guardrails installed along the perimeter of a flat roof"
+                            style="width: 100%; height: 200px; object-fit: cover;">
+                        <div
+                            style="padding: var(--space-6); display: flex; flex-direction: column; gap: var(--space-3); width: 100%;">
+                            <i class="ph ph-barricade card-icon" style="margin-bottom: 0;"></i>
+                            <div class="badge accent" style="align-self: flex-start;">Both</div>
+                            <h3>Edge Protection</h3>
+                            <p style="color: var(--color-secondary);">Rapidly installed perimeter guardrails ensuring
+                                absolute fall-safety for roofers, steel-workers, and framers.</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Hire Rates Pricing Table -->
+        <section style="background-color: var(--color-card-bg);" id="rates">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Hire Rates (Estimates)</h2>
+                    <p>Prices shown are indicative baselines. Final quotes depend on exact height, location, logistics,
+                        and duration.</p>
+                </div>
+
+                <div class="table-responsive">
+                    <table class="pricing-table">
+                        <thead>
+                            <tr>
+                                <th>Scaffold Type</th>
+                                <th>Erection & Dismantle Fee</th>
+                                <th>Daily Rate</th>
+                                <th>Weekly Rate</th>
+                                <th>Monthly Rate</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><b>Tube & Fitting</b> (Standard 2-Story)</td>
+                                <td>Ã‚Â£850.00</td>
+                                <td>Ã‚Â£25.00</td>
+                                <td>Ã‚Â£120.00</td>
+                                <td>Ã‚Â£400.00</td>
+                            </tr>
+                            <tr>
+                                <td><b>System Scaffold</b> (Per 10m run)</td>
+                                <td>Ã‚Â£650.00</td>
+                                <td>Ã‚Â£30.00</td>
+                                <td>Ã‚Â£140.00</td>
+                                <td>Ã‚Â£480.00</td>
+                            </tr>
+                            <tr>
+                                <td><b>Mobile Tower</b> (Up to 5m)</td>
+                                <td>Ã‚Â£150.00</td>
+                                <td>Ã‚Â£45.00</td>
+                                <td>Ã‚Â£180.00</td>
+                                <td>Ã‚Â£600.00</td>
+                            </tr>
+                            <tr>
+                                <td><b>Birdcage</b> (Per 50sqm)</td>
+                                <td>Ã‚Â£1,100.00</td>
+                                <td>Ã‚Â£40.00</td>
+                                <td>Ã‚Â£200.00</td>
+                                <td>Ã‚Â£750.00</td>
+                            </tr>
+                            <tr>
+                                <td><b>Edge Protection</b> (Per 20m run)</td>
+                                <td>Ã‚Â£350.00</td>
+                                <td>Ã‚Â£15.00</td>
+                                <td>Ã‚Â£70.00</td>
+                                <td>Ã‚Â£240.00</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="text-center" style="margin-top: 32px;">
+                    <p style="color: var(--color-secondary); font-size: var(--size-caption); margin-bottom: 24px;">* All
+                        prices exclude VAT. Rates vary by exact height, structural complexity, site access, and permit
+                        requirements.</p>
+                    <a href="contact.html" class="btn btn-primary">Get a Custom Quote</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Add-on Services -->
+        <section>
+            <div class="container">
+                <div class="section-header">
+                    <h2>Add-On Services</h2>
+                    <p>Enhance site safety, logistics, and weather protection with our specialized add-ons.</p>
+                </div>
+
+                <div class="grid grid-4">
+                    <div class="card" style="padding: 24px;">
+                        <i class="ph ph-wind card-icon" style="font-size: 32px;"></i>
+                        <h4 style="margin-bottom: 8px;">Debris Netting</h4>
+                        <p style="font-size: var(--size-caption); margin:0;">Prevent tools or materials falling outside
+                            the site perimeter.</p>
+                    </div>
+                    <div class="card" style="padding: 24px;">
+                        <i class="ph ph-steps card-icon" style="font-size: 32px;"></i>
+                        <h4 style="margin-bottom: 8px;">Staircase Towers</h4>
+                        <p style="font-size: var(--size-caption); margin:0;">Safe, compliant multi-level personnel
+                            access instead of ladders.</p>
+                    </div>
+                    <div class="card" style="padding: 24px;">
+                        <i class="ph ph-package card-icon" style="font-size: 32px;"></i>
+                        <h4 style="margin-bottom: 8px;">Loading Bays</h4>
+                        <p style="font-size: var(--size-caption); margin:0;">Heavy-duty reinforced bays for forklift
+                            material delivery.</p>
+                    </div>
+                    <div class="card" style="padding: 24px;">
+                        <i class="ph ph-cloud-rain card-icon" style="font-size: 32px;"></i>
+                        <h4 style="margin-bottom: 8px;">Shrink Wrapping</h4>
+                        <p style="font-size: var(--size-caption); margin:0;">Complete encapsulation for dust control or
+                            weather-proofing.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <a href="index.html" class="nav-brand" style="margin-bottom: 24px;">
+                        <i class="ph-fill ph-buildings"></i> Scaffix
+                    </a>
+                    <p style="font-size: var(--size-caption); max-width: 300px;">Premium scaffolding hire and erection
+                        services for commercial and domestic projects. 100% safety certified.</p>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Services</h4>
+                    <div class="footer-links">
+                        <a href="services.html#tube-fitting">Tube & Fitting</a>
+                        <a href="services.html#system-scaffold">System Scaffold</a>
+                        <a href="services.html#mobile-tower">Mobile Towers</a>
+                        <a href="hire-rates.html">View Hire Rates</a>
+                    </div>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Trust</h4>
+                    <div class="footer-links">
+                        <a href="safety-compliance.html">Safety Compliance</a>
+                        <a href="safety-compliance.html#inspections">Inspection Schedules</a>
+                        <a href="safety-compliance.html#downloads">Download RAMS</a>
+                        <a href="about.html">About Us</a>
+                    </div>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Contact</h4>
+                    <div class="footer-links">
+                        <a href="contact.html">Get a Quote</a>
+                        <span>123 Industrial Estate<br>London, E1 6AN</span>
+                        <a href="mailto:info@scaffix.example.com">info@scaffix.example.com</a>
+                        <div style="display: flex; gap: 16px; margin-top: 8px;">
+                            <a href="#" aria-label="Facebook"><i class="ph-fill ph-facebook-logo"
+                                    style="font-size: 24px;"></i></a>
+                            <a href="#" aria-label="LinkedIn"><i class="ph-fill ph-linkedin-logo"
+                                    style="font-size: 24px;"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Scaffix Ltd. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>

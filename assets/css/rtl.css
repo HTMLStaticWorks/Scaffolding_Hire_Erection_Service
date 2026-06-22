@@ -1,0 +1,91 @@
+/* rtl.css
+   Overrides for Right-To-Left layouts. 
+   Included when dir="rtl" is set on the <html> tag.
+*/
+
+[dir="rtl"] {
+  /* Core layout flips */
+  text-align: right;
+}
+
+[dir="rtl"] .navbar-container {
+  flex-direction: row-reverse;
+}
+
+[dir="rtl"] .nav-brand {
+  flex-direction: row-reverse;
+}
+
+[dir="rtl"] .nav-actions {
+  flex-direction: row-reverse;
+}
+
+/* Mobile Drawer RTL */
+[dir="rtl"] .mobile-drawer {
+  right: auto;
+  left: -100%;
+  transition: left 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 10px 0 30px rgba(0,0,0,0.1);
+}
+[dir="rtl"] .mobile-drawer.active {
+  left: 0;
+  right: auto;
+}
+[dir="rtl"] .drawer-close {
+  align-self: flex-start;
+}
+
+/* Buttons */
+[dir="rtl"] .btn {
+  flex-direction: row-reverse;
+}
+
+/* Forms */
+[dir="rtl"] .form-group {
+  text-align: right;
+}
+
+[dir="rtl"] .checkbox-group {
+  flex-direction: row-reverse;
+  justify-content: flex-end;
+}
+
+[dir="rtl"] .auth-separator::before {
+  margin-right: 0;
+  margin-left: var(--space-3);
+}
+
+[dir="rtl"] .auth-separator::after {
+  margin-left: 0;
+  margin-right: var(--space-3);
+}
+
+[dir="rtl"] .social-btn {
+  flex-direction: row-reverse;
+}
+
+/* Timeline (Safety Compliance) */
+[dir="rtl"] .timeline {
+  padding-left: 0;
+  padding-right: 2rem;
+  border-left: none;
+  border-right: 2px solid var(--color-border);
+}
+[dir="rtl"] .timeline-item::before {
+  left: auto;
+  right: -calc(2rem + 9px);
+}
+
+/* Pricing Table */
+[dir="rtl"] .pricing-table th,
+[dir="rtl"] .pricing-table td {
+  text-align: right;
+}
+
+/* Doc List */
+[dir="rtl"] .doc-item {
+  flex-direction: row-reverse;
+}
+[dir="rtl"] .doc-info {
+  flex-direction: row-reverse;
+}

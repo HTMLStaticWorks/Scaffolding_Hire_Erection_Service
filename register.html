@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register | Scaffix</title>
+    
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/rtl.css">
+    
+    <style>
+        body {
+            background-color: var(--color-bg);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+        }
+    </style>
+</head>
+<body>
+
+    <main class="auth-wrapper" style="width: 100%;">
+        <div class="auth-card animate-slide-up" style="margin: 48px 0;">
+            <div class="auth-logo">
+                <i class="ph-fill ph-buildings"></i> Scaffix
+            </div>
+            
+            <h2 style="margin-bottom: 32px; font-size: var(--size-h3);">Create an Account</h2>
+            
+            <form action="#" method="POST" id="register-form">
+                
+                <div class="form-group">
+                    <label class="form-label" for="name">Full Name</label>
+                    <input type="text" class="form-control" id="name" name="name" required placeholder="John Doe">
+                    <span class="error-msg">Full name is required</span>
+                </div>
+
+                <div class="form-group">
+                    <label class="form-label" for="email">Email Address</label>
+                    <input type="email" class="form-control" id="email" name="email" required placeholder="name@company.com">
+                    <span class="error-msg">Enter a valid email address</span>
+                </div>
+                
+                <div class="form-group">
+                    <label class="form-label" for="password">Password</label>
+                    <input type="password" class="form-control" id="password" name="password" required placeholder="Ã¢â‚¬Â¢Ã¢â‚¬Â¢Ã¢â‚¬Â¢Ã¢â‚¬Â¢Ã¢â‚¬Â¢Ã¢â‚¬Â¢Ã¢â‚¬Â¢Ã¢â‚¬Â¢">
+                    <span class="error-msg">Password must be at least 8 characters</span>
+                </div>
+
+                <div class="form-group">
+                    <label class="form-label" for="confirm_password">Confirm Password</label>
+                    <input type="password" class="form-control" id="confirm_password" name="confirm_password" required placeholder="Ã¢â‚¬Â¢Ã¢â‚¬Â¢Ã¢â‚¬Â¢Ã¢â‚¬Â¢Ã¢â‚¬Â¢Ã¢â‚¬Â¢Ã¢â‚¬Â¢Ã¢â‚¬Â¢">
+                    <span class="error-msg">Passwords do not match</span>
+                </div>
+
+                <div class="checkbox-group" style="margin-top: 24px;">
+                    <input type="checkbox" id="terms" name="terms" required>
+                    <label for="terms" style="font-size: var(--size-caption); text-align: left;">
+                        I accept the <a href="#" style="color: var(--color-primary);">Terms & Conditions</a> and Privacy Policy.
+                    </label>
+                    <div style="width: 100%;">
+                        <span class="error-msg">You must accept the terms to continue</span>
+                    </div>
+                </div>
+                
+                <button type="submit" class="btn btn-primary btn-full" style="margin-top: 16px;">Register</button>
+            </form>
+            
+            <div class="auth-separator">OR</div>
+            
+            <button class="social-btn">
+                <i class="ph-fill ph-google-logo" style="color: #DB4437; font-size: 20px;"></i> Continue with Google
+            </button>
+            <button class="social-btn">
+                <i class="ph ph-envelope-simple" style="font-size: 20px;"></i> Continue with Email
+            </button>
+            
+            <p style="margin-top: 32px; font-size: var(--size-label);">
+                Already have an account? <a href="login.html" style="color: var(--color-primary); font-weight: var(--weight-bold-inline);">Login</a>
+            </p>
+        </div>
+    </main>
+
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
