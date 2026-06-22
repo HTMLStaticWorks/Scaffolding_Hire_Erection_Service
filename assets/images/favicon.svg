@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32">
+  <!-- Tall left building -->
+  <rect x="1" y="2" width="11" height="26" fill="#B5502E" rx="1"/>
+  <!-- Windows on tall building -->
+  <rect x="3" y="5" width="3" height="3" fill="white"/>
+  <rect x="8" y="5" width="3" height="3" fill="white"/>
+  <rect x="3" y="11" width="3" height="3" fill="white"/>
+  <rect x="8" y="11" width="3" height="3" fill="white"/>
+
+  <!-- Mid building -->
+  <rect x="13" y="8" width="9" height="20" fill="#B5502E" rx="1"/>
+  <!-- Windows on mid building -->
+  <rect x="15" y="12" width="2" height="2" fill="white"/>
+  <rect x="18" y="12" width="2" height="2" fill="white"/>
+  <rect x="15" y="17" width="2" height="2" fill="white"/>
+
+  <!-- Short right building -->
+  <rect x="23" y="14" width="8" height="14" fill="#B5502E" rx="1"/>
+  <!-- Window on short building -->
+  <rect x="25" y="18" width="2" height="2" fill="white"/>
+
+  <!-- Ground line -->
+  <rect x="1" y="28" width="30" height="2" fill="#B5502E" rx="1"/>
+</svg>
