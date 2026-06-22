@@ -1,14 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Us | Scaffix</title>
-    
+
     <script src="https://unpkg.com/@phosphor-icons/web"></script>
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/rtl.css">
 </head>
+
 <body>
 
     <div class="drawer-overlay"></div>
@@ -38,15 +40,16 @@
             <nav class="nav-menu">
                 <a href="index.html" class="nav-link">Home</a>
                 <a href="home2.html" class="nav-link">Home 2</a>
-            <a href="about.html" class="nav-link active">About Us</a>
+                <a href="about.html" class="nav-link active">About Us</a>
                 <a href="services.html" class="nav-link">Services</a>
-            <a href="hire-rates.html" class="nav-link">Hire Rates</a>
+                <a href="hire-rates.html" class="nav-link">Hire Rates</a>
                 <a href="safety-compliance.html" class="nav-link">Safety Compliance</a>
                 <a href="blog.html" class="nav-link">Blog</a>
                 <a href="contact.html" class="nav-link">Contact</a>
             </nav>
             <div class="nav-actions">
-                <button class="icon-btn rtl-toggle" aria-label="Toggle RTL"><i class="ph ph-arrows-left-right"></i></button>
+                <button class="icon-btn rtl-toggle" aria-label="Toggle RTL"><i
+                        class="ph ph-arrows-left-right"></i></button>
                 <button class="icon-btn theme-toggle" aria-label="Toggle dark mode"><i class="ph ph-moon"></i></button>
                 <a href="login.html" class="btn btn-outline">Login</a>
             </div>
@@ -56,7 +59,8 @@
 
     <main>
         <!-- Page Header -->
-        <section style="background-color: var(--color-card-bg); padding-top: calc(80px + var(--space-8)); padding-bottom: var(--space-8);">
+        <section
+            style="background-color: var(--color-card-bg); padding-top: calc(80px + var(--space-8)); padding-bottom: var(--space-8);">
             <div class="container text-center">
                 <h1 class="animate-slide-up">About Scaffix</h1>
                 <p class="lead animate-slide-up delay-1">Decades of combined experience. Zero compromises on safety.</p>
@@ -68,16 +72,25 @@
             <div class="container">
                 <div class="grid grid-2" style="align-items: center;">
                     <div>
-                        <img src="https://images.unsplash.com/photo-1504307651254-35680f356f67?auto=format&fit=crop&w=800&q=80" alt="Scaffix History" style="border-radius: var(--radius); box-shadow: var(--shadow);">
+                        <img src="assets/images/company-story.jpg"
+                            alt="Scaffix founding yard with lorry and founder in hi-vis at golden hour"
+                            style="border-radius: var(--radius); box-shadow: var(--shadow); width: 100%; height: 420px; object-fit: cover; object-position: center;">
                     </div>
                     <div style="padding-left: 48px;">
                         <h2 style="text-align: left;">Building the Foundation</h2>
-                        <p>Scaffix was founded on a simple premise: scaffolding shouldn't just be a necessity, it should be an asset. When access is safe, clean, and delivered on time, the entire construction project runs smoother.</p>
-                        <p>Starting with a small yard and a dedicated crew, we have expanded to service some of the region's most demanding commercial projects, while retaining our roots in careful, respectful domestic work.</p>
+                        <p>Scaffix was founded on a simple premise: scaffolding shouldn't just be a necessity, it should
+                            be an asset. When access is safe, clean, and delivered on time, the entire construction
+                            project runs smoother.</p>
+                        <p>Starting with a small yard and a dedicated crew, we have expanded to service some of the
+                            region's most demanding commercial projects, while retaining our roots in careful,
+                            respectful domestic work.</p>
                         <ul style="margin-top: 24px; display: flex; flex-direction: column; gap: 12px;">
-                            <li><i class="ph-fill ph-check-circle text-primary"></i> <b>Integrity:</b> Upfront pricing, no hidden fees.</li>
-                            <li><i class="ph-fill ph-check-circle text-primary"></i> <b>Precision:</b> Exacting TG20:21 standards.</li>
-                            <li><i class="ph-fill ph-check-circle text-primary"></i> <b>Respect:</b> Treating your site or home like our own.</li>
+                            <li><i class="ph-fill ph-check-circle text-primary"></i> <b>Integrity:</b> Upfront pricing,
+                                no hidden fees.</li>
+                            <li><i class="ph-fill ph-check-circle text-primary"></i> <b>Precision:</b> Exacting TG20:21
+                                standards.</li>
+                            <li><i class="ph-fill ph-check-circle text-primary"></i> <b>Respect:</b> Treating your site
+                                or home like our own.</li>
                         </ul>
                     </div>
                 </div>
@@ -90,7 +103,7 @@
                 <div class="section-header">
                     <h2>Our Journey</h2>
                 </div>
-                
+
                 <style>
                     .custom-timeline {
                         position: relative;
@@ -98,6 +111,7 @@
                         margin: 40px auto 0;
                         padding-inline-start: 2rem;
                     }
+
                     .custom-timeline::before {
                         content: '';
                         position: absolute;
@@ -108,14 +122,17 @@
                         background: var(--color-border);
                         border-radius: 4px;
                     }
+
                     .custom-timeline-item {
                         position: relative;
                         padding-bottom: 48px;
                         padding-inline-start: 32px;
                     }
+
                     .custom-timeline-item:last-child {
                         padding-bottom: 0;
                     }
+
                     .custom-timeline-item::before {
                         content: '';
                         position: absolute;
@@ -130,11 +147,13 @@
                         z-index: 1;
                         transition: all 0.3s ease;
                     }
+
                     .custom-timeline-item:hover::before {
                         transform: scale(1.2);
                         background: var(--color-accent);
                         box-shadow: 0 0 0 2px var(--color-accent);
                     }
+
                     .custom-timeline-year {
                         display: inline-block;
                         font-weight: 800;
@@ -142,6 +161,7 @@
                         margin-inline-end: 8px;
                         font-size: 1.3rem;
                     }
+
                     .custom-timeline-title {
                         display: inline-block;
                         font-size: 1.3rem;
@@ -149,35 +169,39 @@
                         color: var(--color-heading);
                     }
                 </style>
-                
+
                 <div class="custom-timeline">
                     <div class="custom-timeline-item">
                         <div style="margin-bottom: 8px;">
                             <span class="custom-timeline-year">2012</span>
                             <span class="custom-timeline-title">&mdash; The Beginning</span>
                         </div>
-                        <p style="color: var(--color-secondary); font-size: 1.05rem;">Founded with a single lorry and a commitment to doing things the right way.</p>
+                        <p style="color: var(--color-secondary); font-size: 1.05rem;">Founded with a single lorry and a
+                            commitment to doing things the right way.</p>
                     </div>
                     <div class="custom-timeline-item">
                         <div style="margin-bottom: 8px;">
                             <span class="custom-timeline-year">2016</span>
                             <span class="custom-timeline-title">&mdash; NASC Accreditation</span>
                         </div>
-                        <p style="color: var(--color-secondary); font-size: 1.05rem;">Achieved full NASC membership, cementing our status as a trusted, audited contractor.</p>
+                        <p style="color: var(--color-secondary); font-size: 1.05rem;">Achieved full NASC membership,
+                            cementing our status as a trusted, audited contractor.</p>
                     </div>
                     <div class="custom-timeline-item">
                         <div style="margin-bottom: 8px;">
                             <span class="custom-timeline-year">2020</span>
                             <span class="custom-timeline-title">&mdash; Commercial Expansion</span>
                         </div>
-                        <p style="color: var(--color-secondary); font-size: 1.05rem;">Expanded inventory to over 1,000 tonnes of system and tube scaffolding, taking on major city-center contracts.</p>
+                        <p style="color: var(--color-secondary); font-size: 1.05rem;">Expanded inventory to over 1,000
+                            tonnes of system and tube scaffolding, taking on major city-center contracts.</p>
                     </div>
                     <div class="custom-timeline-item">
                         <div style="margin-bottom: 8px;">
                             <span class="custom-timeline-year">2026</span>
                             <span class="custom-timeline-title">&mdash; 15 Years Accident Free</span>
                         </div>
-                        <p style="color: var(--color-secondary); font-size: 1.05rem;">A proud milestone. Over 500+ projects completed with a spotless safety record.</p>
+                        <p style="color: var(--color-secondary); font-size: 1.05rem;">A proud milestone. Over 500+
+                            projects completed with a spotless safety record.</p>
                     </div>
                 </div>
             </div>
@@ -190,34 +214,52 @@
                     <h2>Leadership & Supervisors</h2>
                     <p>The highly qualified professionals driving our safety and operational excellence.</p>
                 </div>
-                
+
                 <div class="grid grid-3">
+
+                    <!-- David Reynolds -->
                     <div class="card" style="padding: 0; overflow: hidden;">
-                        <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&w=400&h=400&q=80" alt="Team Member" style="width: 100%; height: 300px; object-fit: cover;">
+                        <img src="assets/images/team-david.jpg" alt="David Reynolds, Managing Director of Scaffix"
+                            style="width: 100%; height: 300px; object-fit: cover; object-position: center top;">
                         <div style="padding: 24px; width: 100%;">
                             <h3 style="margin-bottom: 4px;">David Reynolds</h3>
-                            <p style="color: var(--color-primary); font-size: var(--size-caption); margin-bottom: 16px;">Managing Director</p>
-                            <p style="font-size: var(--size-caption); color: var(--color-secondary);">Advanced Scaffolder with 25 years of industry experience.</p>
-                        </div>
-                    </div>
-                    
-                    <div class="card" style="padding: 0; overflow: hidden;">
-                        <img src="https://images.unsplash.com/photo-1580611425164-88390b10629a?auto=format&fit=crop&w=400&h=400&q=80" alt="Team Member" style="width: 100%; height: 300px; object-fit: cover;">
-                        <div style="padding: 24px; width: 100%;">
-                            <h3 style="margin-bottom: 4px;">Marcus Chen</h3>
-                            <p style="color: var(--color-primary); font-size: var(--size-caption); margin-bottom: 16px;">Health & Safety Director</p>
-                            <p style="font-size: var(--size-caption); color: var(--color-secondary);">NEBOSH qualified. Ensures all operations meet strict legal compliance.</p>
+                            <p
+                                style="color: var(--color-primary); font-size: var(--size-caption); margin-bottom: 16px;">
+                                Managing Director</p>
+                            <p style="font-size: var(--size-caption); color: var(--color-secondary);">Advanced
+                                Scaffolder with 25 years of industry experience.</p>
                         </div>
                     </div>
 
+                    <!-- Marcus Chen -->
                     <div class="card" style="padding: 0; overflow: hidden;">
-                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=400&h=400&q=80" alt="Team Member" style="width: 100%; height: 300px; object-fit: cover;">
+                        <img src="assets/images/team-marcus.jpg"
+                            alt="Marcus Chen, Health and Safety Director at Scaffix"
+                            style="width: 100%; height: 300px; object-fit: cover; object-position: center top;">
                         <div style="padding: 24px; width: 100%;">
-                            <h3 style="margin-bottom: 4px;">Thomas Wright</h3>
-                            <p style="color: var(--color-primary); font-size: var(--size-caption); margin-bottom: 16px;">Senior Site Supervisor</p>
-                            <p style="font-size: var(--size-caption); color: var(--color-secondary);">CISRS Supervisor overseeing all large-scale commercial deployments.</p>
+                            <h3 style="margin-bottom: 4px;">Marcus Chen</h3>
+                            <p
+                                style="color: var(--color-primary); font-size: var(--size-caption); margin-bottom: 16px;">
+                                Health & Safety Director</p>
+                            <p style="font-size: var(--size-caption); color: var(--color-secondary);">NEBOSH qualified.
+                                Ensures all operations meet strict legal compliance.</p>
                         </div>
                     </div>
+
+                    <!-- Thomas Wright -->
+                    <div class="card" style="padding: 0; overflow: hidden;">
+                        <img src="assets/images/team-thomas.jpg" alt="Thomas Wright, Senior Site Supervisor at Scaffix"
+                            style="width: 100%; height: 300px; object-fit: cover; object-position: center top;">
+                        <div style="padding: 24px; width: 100%;">
+                            <h3 style="margin-bottom: 4px;">Thomas Wright</h3>
+                            <p
+                                style="color: var(--color-primary); font-size: var(--size-caption); margin-bottom: 16px;">
+                                Senior Site Supervisor</p>
+                            <p style="font-size: var(--size-caption); color: var(--color-secondary);">CISRS Supervisor
+                                overseeing all large-scale commercial deployments.</p>
+                        </div>
+                    </div>
+
                 </div>
             </div>
         </section>
@@ -232,9 +274,10 @@
                     <a href="index.html" class="nav-brand" style="margin-bottom: 24px;">
                         <i class="ph-fill ph-buildings"></i> Scaffix
                     </a>
-                    <p style="font-size: var(--size-caption); max-width: 300px;">Premium scaffolding hire and erection services for commercial and domestic projects. 100% safety certified.</p>
+                    <p style="font-size: var(--size-caption); max-width: 300px;">Premium scaffolding hire and erection
+                        services for commercial and domestic projects. 100% safety certified.</p>
                 </div>
-                
+
                 <div class="footer-col">
                     <h4>Services</h4>
                     <div class="footer-links">
@@ -244,7 +287,7 @@
                         <a href="hire-rates.html">View Hire Rates</a>
                     </div>
                 </div>
-                
+
                 <div class="footer-col">
                     <h4>Trust</h4>
                     <div class="footer-links">
@@ -254,7 +297,7 @@
                         <a href="about.html">About Us</a>
                     </div>
                 </div>
-                
+
                 <div class="footer-col">
                     <h4>Contact</h4>
                     <div class="footer-links">
@@ -262,8 +305,10 @@
                         <span>123 Industrial Estate<br>London, E1 6AN</span>
                         <a href="mailto:info@scaffix.example.com">info@scaffix.example.com</a>
                         <div style="display: flex; gap: 16px; margin-top: 8px;">
-                            <a href="#" aria-label="Facebook"><i class="ph-fill ph-facebook-logo" style="font-size: 24px;"></i></a>
-                            <a href="#" aria-label="LinkedIn"><i class="ph-fill ph-linkedin-logo" style="font-size: 24px;"></i></a>
+                            <a href="#" aria-label="Facebook"><i class="ph-fill ph-facebook-logo"
+                                    style="font-size: 24px;"></i></a>
+                            <a href="#" aria-label="LinkedIn"><i class="ph-fill ph-linkedin-logo"
+                                    style="font-size: 24px;"></i></a>
                         </div>
                     </div>
                 </div>
@@ -276,4 +321,5 @@
 
     <script src="assets/js/main.js"></script>
 </body>
+
 </html>
