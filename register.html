@@ -76,6 +76,12 @@
                 justify-content: flex-start;
             }
         }
+
+        @media (min-width: 768px) {
+            .terms-label br {
+                display: none;
+            }
+        }
     </style>
     <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
 </head>
@@ -128,8 +134,8 @@
 
                 <div class="checkbox-group" style="margin-top: 24px; flex-wrap: wrap;">
                     <input type="checkbox" id="terms" name="terms" required>
-                    <label for="terms" style="font-size: var(--size-caption); text-align: left;">
-                        I accept <a href="#" style="color: var(--color-primary);">Terms & Conditions</a><br>and <a
+                    <label for="terms" class="terms-label" style="font-size: var(--size-caption); text-align: left;">
+                        I accept <a href="#" style="color: var(--color-primary);">Terms & Conditions </a><br>and <a
                             href="#" style="color: var(--color-primary);">Privacy Policy</a>.
                     </label>
                     <div style="width: 100%;">
