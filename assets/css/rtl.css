@@ -89,3 +89,9 @@
 [dir="rtl"] .doc-info {
   flex-direction: row-reverse;
 }
+
+/* Footer Logo Alignment */
+[dir="rtl"] .footer .nav-brand {
+  justify-content: flex-end;
+}
+
