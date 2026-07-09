@@ -219,6 +219,17 @@ section {
   color: var(--color-accent);
 }
 
+.btn-white {
+  background-color: #FFF;
+  color: var(--color-primary);
+  border-color: #FFF;
+}
+.btn-white:hover {
+  background-color: transparent;
+  color: #FFF;
+  border-color: #FFF;
+}
+
 .btn-outline {
   background-color: transparent;
   border-color: var(--color-primary);
@@ -264,7 +275,7 @@ section {
   color: var(--color-primary);
   margin-bottom: var(--space-4);
 }
-.card h3 {
+.card h3, .card h4 {
   margin-bottom: var(--space-2);
 }
 .card p {
@@ -457,7 +468,7 @@ section {
 .hero .lead {
   margin-bottom: var(--space-6);
   font-size: 1.25rem;
-  color: #4A4F59;
+  color: #1F2229;
 }
 [data-theme="dark"] .hero .lead {
   color: var(--color-secondary);
@@ -467,6 +478,24 @@ section {
   gap: var(--space-4);
   justify-content: center;
   flex-wrap: wrap;
+}
+.hero-dark {
+  background-color: #15171A !important;
+  color: #F2F2F2 !important;
+}
+.hero-dark h1 {
+  color: #FFFFFF !important;
+}
+.hero-dark .lead {
+  color: #A8ADB5 !important;
+}
+.hero-dark .btn-outline {
+  border-color: #F2F2F2 !important;
+  color: #F2F2F2 !important;
+}
+.hero-dark .btn-outline:hover {
+  background-color: #F2F2F2 !important;
+  color: #15171A !important;
 }
 
 /* =========================================
@@ -617,6 +646,23 @@ section {
 .footer-links a:hover {
   color: var(--color-primary);
 }
+.footer-contact-item {
+  display: flex !important;
+  align-items: flex-start;
+  gap: var(--space-2);
+  color: var(--color-footer-text);
+  line-height: 1.5;
+  text-align: left;
+}
+.footer-contact-item i {
+  margin-top: 2px;
+  color: var(--color-primary);
+  font-size: 1.15rem;
+  flex-shrink: 0;
+}
+[dir="rtl"] .footer-contact-item {
+  text-align: right;
+}
 .footer-bottom {
   border-top: 1px solid var(--color-border);
   padding-top: var(--space-4);
@@ -641,6 +687,15 @@ section {
   }
   .footer-col:first-child p {
     margin-inline: auto;
+  }
+  .footer-links {
+    align-items: center;
+  }
+  .footer-contact-item {
+    text-align: left;
+  }
+  [dir="rtl"] .footer-contact-item {
+    text-align: right;
   }
   .footer-col .footer-links div[style*="display: flex"] {
     justify-content: center;

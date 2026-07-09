@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -117,34 +117,34 @@
                         position: relative;
                         max-width: 800px;
                         margin: 40px auto 0;
-                        padding-inline-start: 2rem;
+                        padding-inline-start: 0;
                     }
-
+ 
                     .custom-timeline::before {
                         content: '';
                         position: absolute;
-                        inset-inline-start: 0;
+                        inset-inline-start: 8px;
                         top: 8px;
                         bottom: 0;
                         width: 4px;
                         background: var(--color-border);
                         border-radius: 4px;
                     }
-
+ 
                     .custom-timeline-item {
                         position: relative;
                         padding-bottom: 48px;
-                        padding-inline-start: 32px;
+                        padding-inline-start: 36px;
                     }
-
+ 
                     .custom-timeline-item:last-child {
                         padding-bottom: 0;
                     }
-
+ 
                     .custom-timeline-item::before {
                         content: '';
                         position: absolute;
-                        inset-inline-start: -9.5px;
+                        inset-inline-start: 0;
                         top: 4px;
                         width: 20px;
                         height: 20px;
@@ -309,9 +309,9 @@
                 <div class="footer-col">
                     <h4>Contact</h4>
                     <div class="footer-links">
-                        <a href="contact.html">Get a Quote</a>
-                        <span>123 Industrial Estate<br>London, E1 6AN</span>
-                        <a href="mailto:info@scaffix.example.com">info@scaffix.example.com</a>
+                        <a href="contact.html" class="footer-contact-item"><i class="ph-fill ph-chat-circle-dots"></i>Get a Quote</a>
+                        <span class="footer-contact-item"><i class="ph-fill ph-map-pin"></i><span>123 Industrial Estate<br>London, E1 6AN</span></span>
+                        <a href="mailto:info@scaffix.example.com" class="footer-contact-item"><i class="ph-fill ph-envelope"></i>info@scaffix.example.com</a>
                         <!-- Socials -->
                         <div style="display: flex; gap: 16px; margin-top: 8px;">
                             <a href="#" aria-label="Facebook"><i class="ph-fill ph-facebook-logo"
