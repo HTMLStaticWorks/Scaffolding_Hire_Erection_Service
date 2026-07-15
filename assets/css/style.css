@@ -67,6 +67,7 @@
 }
 
 [data-theme="dark"] {
+  color-scheme: dark;
   --color-primary: #D2673F;
   --color-primary-dark: #B5502E;
   --color-primary-soft: #2A211D;
